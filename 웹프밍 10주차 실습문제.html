@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      body{
+        width: 500px;
+        margin: 10px auto; 
+      }
+      #middle{
+        overflow: hidden;
+      }
+      #left{
+        float: left;
+        background-color: red;
+        width: 150px; height: 460px;
+      }
+      #right{
+        float: left;
+        background-color: blue;
+        width: 350px; height: 460px;
+      }
+
+      #top{
+        background-color: green;
+        position: relative;
+      }
+      #bottom{
+        background-color: purple;
+      }
+      #container{
+        width: 344px; height: 300px;
+        border: 3px solid black;
+        overflow: hidden;
+        position: relative;
+        background-color: white;
+      }
+      .circle{
+        position: absolute;
+        border: 3px solid black;
+        width: 100px; height: 100px; 
+        border-radius: 50% 50%;
+      }
+      .ellipsis{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #red{
+        background: red;
+        left: 20px; top :20px;
+      }
+      #green{
+        background: green;
+        right: 20px; top: 20px;
+      }
+      #blue{
+        background: blue;
+        left: 20px; bottom: 20px;
+      }
+      #yellow{
+        background: yellow;
+        right: 20px; bottom: 20px;
+      }
+      #container2{
+        background: orange;
+        width: 150px; height: 100px;
+        position: absolute;
+        left: 50%; top: 50%;
+        margin-left: -75px;
+        margin-top: -50px;
+        z-index: 10;
+      }
+    </style>
+</head>
+<body>
+  <div id="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus corrupti omnis quasi quis facere doloribus rem? Ad, sed ea officiis repellat odio officia laudantium blanditiis facilis quibusdam excepturi. Et, ab. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus dolore cupiditate atque laudantium, consequatur iure illo asperiores corporis a repudiandae maiores porro enim sed temporibus aperiam aut amet vero ad!
+      <div id="container2">
+        <h3 class="ellipsis">요소의 중앙 배치 글자 생략</h3>
+      </div>
+  </div>
+  <div id="middle">
+    <div id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ullam maxime quasi veritatis fugit explicabo rem blanditiis. Laboriosam beatae modi provident architecto, laudantium odio iusto animi minus optio eligendi recusandae. excepturi esse modi consequuntur dolore praesentium nesciunt mollitia earum!</div>
+    <div id="right">
+      nesciunt enim quia ipsa reiciendis fuga totam quo velit explicabo tempora ipsum. Accusamus, odit?
+      <div id="container">
+        <div id="red" class="circle"></div>
+        <div id="green" class="circle"></div>
+        <div id="blue" class="circle"></div>
+        <div id="yellow" class="circle"></div>
+      </div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id saepe, voluptates excepturi est nobis quo molestias aperiam eligendi dolore unde dolor facilis! Perferendis laboriosam voluptas culpa dignissimos, omnis corporis accusantium!
+    </div>
+  </div>
+  <div id="bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquam dolorum odio doloribus deserunt maxime eligendi pariatur rerum. Deserunt quam, eveniet placeat laudantium velit assumenda dolores explicabo architecto recusandae voluptates!</div>  
+</body>
+</html>

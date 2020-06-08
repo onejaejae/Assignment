@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+        var cm = prompt("값을 입력해주세요");
+        cm = parseInt(cm);
+
+        var inch = cm/2.54;
+        document.write(inch.toFixed(6) + 'inch' + '<br>');
+
+        var feet = inch/12;
+        document.write(feet.toFixed(6) + 'feet');
+    </script>
+</body>
+</html>

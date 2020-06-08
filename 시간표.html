@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        .monPm{
+            background-color: blue;
+        }
+        .tuePm{
+            background-color: brown;
+        }
+        .wedAm{
+            background-color: chocolate;
+        }
+        .thuAm{
+            background-color: darkgray;
+        }
+        .thuPm{
+            background-color: fuchsia;
+        }
+        .friPm{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1교시</td>
+            <td rowspan="3" style="border-style:none";></td>
+            <td rowspan="3" style="border-style:none";></td>
+            <td rowspan="3" class="wedAm">일본의문화</td>
+            <td rowspan="3" class="thuAm">C프로그래밍기초</td>
+            <td rowspan="3" style="border-style:none;"></td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+            </tr>
+            <tr>
+                <td>4교시</td> 
+                <td colspan="5" style="border-style:none"></td>
+            </tr>
+            <tr>
+                <td>5교시</td>
+                <td colspan="5" style="border-style:none"></td>
+            </tr>
+            <tr>
+                <td>6교시</td>
+                <td rowspan="3" class="monPm">웹프로그래밍</td>
+                <td rowspan="3" class="tuePm">초급 일본어회화</td>
+                <td rowspan="3" style="border-style: none;""></td>
+                <td rowspan="3" class="thuPm">자료구조론</td>
+                <td rowspan="3" class="friPm">자바프로그래밍</td>
+            </tr>
+            <tr>
+                <td>7교시</td>
+            </tr>
+            <tr>
+                <td>8교시</td>
+            </tr>
+            <tfoot>
+                <tr >
+                    <td>9교시</td>
+                  
+                </tr>
+            </tfoot>
+              
+        </tbody>
+
+    </table>
+</body>
+</html>

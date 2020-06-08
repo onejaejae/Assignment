@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = prompt("네 자리 정수를 입력하시오");
+        var thousand = parseInt(num/1000);
+        var hundred = parseInt(num%1000/100);
+        var ten = parseInt(num%100/10);
+        var one = parseInt(num%10/1);
+
+        document.write("천의 자리 : " + thousand + "<br>" + "백의 자리 : " + hundred + "<br>" + "십의 자리 : " + ten + "<br>" + "일의 자리 : " + one);
+    </script>
+</body>
+</html>

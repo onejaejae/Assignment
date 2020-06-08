@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var r = prompt("원기둥 밑면의 반지름을 입력하시오");
+            r = parseInt(r);
+
+            var h = prompt("원기둥 밑면의 높이를 입력하시오");
+            h = parseInt(h);
+
+            var area = r * r * Math.PI;
+            var volume = area * h ;
+            
+            document.write(volume);
+    </script>
+</body>
+</html>
